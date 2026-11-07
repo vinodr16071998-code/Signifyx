@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Signifyx manufactures and installs custom signage including 3D LED letters, acrylic name boards, glow signs, ACP signs, flex banners, neon signs and digital LED displays.">
+  <meta name="theme-color" content="#101a2d">
+  <title>Signifyx | Custom Signage Manufacturing & Installation</title>
+  <style>
+    :root{--navy:#101a2d;--navy2:#172743;--blue:#3278f6;--cyan:#54d5e8;--ink:#172033;--muted:#667085;--light:#f4f7fb;--line:#e4eaf2;--white:#fff;--radius:22px;--shadow:0 18px 50px rgba(16,26,45,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:#fff}a{color:inherit;text-decoration:none}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{background:#0b1322;color:#cbd5e1;font-size:13px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(228,234,242,.8)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:25px;letter-spacing:-1px;color:var(--navy)}.brand-mark{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#fff;font-size:20px;font-weight:900}.navlinks{display:flex;align-items:center;gap:27px;font-size:14px;font-weight:650;color:#475467}.navlinks a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;background:var(--blue);color:#fff;font-weight:750;font-size:14px;cursor:pointer;box-shadow:0 9px 24px rgba(50,120,246,.22);transition:.2s}.btn:hover{transform:translateY(-2px);background:#2268e6}.btn-outline{background:transparent;color:var(--navy);border:1px solid #cdd7e5;box-shadow:none}.btn-outline:hover{background:#f4f7fb;color:var(--navy)}
+    .hero{background:radial-gradient(circle at 80% 15%,rgba(50,120,246,.22),transparent 28%),linear-gradient(120deg,#0e192c,#172a49 65%,#10233e);color:#fff;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.09);border-radius:50%;right:-130px;bottom:-310px;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.02)}.hero-grid{min-height:590px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px;padding-top:70px;padding-bottom:75px;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#9bdcf3;text-transform:uppercase;letter-spacing:1.7px;font-weight:800;font-size:11px}.eyebrow:before{content:"";width:24px;height:2px;background:var(--cyan)}h1{font-size:clamp(42px,5.4vw,68px);line-height:1.04;letter-spacing:-2.7px;margin:20px 0 20px;max-width:670px}.hero h1 span{color:#6ed8ee}.hero-copy{font-size:17px;color:#c7d3e4;max-width:560px;margin:0 0 30px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.hero .btn-outline{color:#fff;border-color:rgba(255,255,255,.34)}.hero .btn-outline:hover{background:rgba(255,255,255,.1)}.hero-note{margin-top:27px;color:#aebdd1;font-size:12px}.visual{position:relative;min-height:390px;display:grid;place-items:center}.sign-card{width:min(100%,460px);aspect-ratio:1.12;border-radius:28px;background:linear-gradient(145deg,#253d60,#0c1729);border:1px solid rgba(255,255,255,.18);box-shadow:0 35px 80px rgba(0,0,0,.3);padding:25px;position:relative;transform:rotate(2deg)}.sign-scene{height:100%;border-radius:18px;background:linear-gradient(160deg,#25354a,#111b2a 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}.sign-scene:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 25%,rgba(255,255,255,.08),transparent 55%)}.sign-word{font-size:clamp(37px,5vw,61px);font-weight:950;letter-spacing:3px;color:#fff;text-shadow:0 0 8px #fff,0 0 22px #43cfff,0 0 48px #287bff;z-index:1}.sign-sub{font-size:10px;letter-spacing:4px;color:#9fe9ff;margin-top:12px;z-index:1}.glow-line{width:65%;height:2px;background:#50d5ff;box-shadow:0 0 16px #50d5ff;margin-top:20px}.floating-tag{position:absolute;background:#fff;color:var(--navy);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-size:12px;font-weight:800}.tag-one{left:-12px;top:48px}.tag-two{right:-14px;bottom:42px}.tag-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#20c997;margin-right:7px}
+    .trust{background:#fff;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:23px 0;gap:20px}.trust-item{display:flex;align-items:center;justify-content:center;gap:11px;color:#475467;font-size:13px;font-weight:750}.trust-icon{width:35px;height:35px;border-radius:11px;background:#edf4ff;color:var(--blue);display:grid;place-items:center;font-size:17px}
+    section{padding:92px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 43px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.8px;font-weight:850;color:var(--blue)}h2{font-size:clamp(30px,4vw,43px);letter-spacing:-1.5px;line-height:1.15;color:var(--navy);margin:12px 0}.section-head p,.muted{color:var(--muted);font-size:15px}.services{background:var(--light)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;border:1px solid var(--line);border-radius:19px;padding:25px;transition:.22s}.service:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#c9dcff}.service-icon{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#eaf2ff,#e8fbff);display:grid;place-items:center;color:#2268e6;font-size:22px;margin-bottom:17px}.service h3{font-size:17px;color:var(--navy);margin:0 0 8px}.service p{font-size:13px;color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-panel{background:linear-gradient(145deg,#14223a,#203e68);border-radius:25px;padding:36px;color:#fff;min-height:330px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.about-panel:after{content:"S";font-size:280px;line-height:1;font-weight:950;color:rgba(255,255,255,.045);position:absolute;right:5px;bottom:-65px}.about-panel strong{font-size:28px;line-height:1.2;max-width:320px;z-index:1}.about-panel small{color:#b9c9dc;z-index:1}.about-copy h2{margin-top:10px}.check-list{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:13px}.check-list li{display:flex;gap:10px;align-items:flex-start;color:#475467;font-size:14px}.check{color:#1ca67a;font-weight:900}
+    .process{background:#f6f8fc}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{padding:23px;background:#fff;border:1px solid var(--line);border-radius:18px}.step-num{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:1px}.step h3{font-size:16px;margin:12px 0 7px;color:var(--navy)}.step p{font-size:13px;color:var(--muted);margin:0}
+    .cta{padding:0 0 92px;background:#f6f8fc}.cta-box{border-radius:25px;background:linear-gradient(110deg,#14213a,#1d4778);padding:44px 48px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta-box h2{color:#fff;margin:0 0 9px}.cta-box p{color:#c4d2e4;margin:0;font-size:14px}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px}.contact-info{background:#f5f8fc;border:1px solid var(--line);border-radius:22px;padding:30px}.contact-info h3{font-size:22px;color:var(--navy);margin:0 0 10px}.contact-line{padding:16px 0;border-bottom:1px solid var(--line);font-size:14px;color:#475467}.contact-line:last-child{border:0}.contact-line b{display:block;color:var(--navy);font-size:12px;text-transform:uppercase;letter-spacing:.7px;margin-bottom:4px}.form{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#344054}.field input,.field select,.field textarea{width:100%;border:1px solid #d6deea;border-radius:11px;padding:13px 14px;font:inherit;font-size:14px;outline:none;background:#fff}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(50,120,246,.1)}.field textarea{min-height:115px;resize:vertical}.form-note{font-size:11px;color:#7b8798;margin-top:10px}.form-status{font-size:13px;color:#167a59;margin-top:10px;min-height:20px}
+    footer{background:#0b1424;color:#c1ccdc;padding:34px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{color:#fff;font-size:20px;font-weight:900}.footer-small{font-size:12px;color:#92a2b8}.footer-links{display:flex;gap:18px;font-size:12px}.whatsapp{position:fixed;right:22px;bottom:22px;z-index:30;width:58px;height:58px;border-radius:50%;background:#20b96b;color:#fff;display:grid;place-items:center;font-size:25px;box-shadow:0 10px 30px rgba(0,0,0,.22);border:3px solid #fff}
+    @media(max-width:850px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr;gap:15px;padding-top:65px}.visual{min-height:330px}.sign-card{max-width:420px}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.process-grid{grid-template-columns:repeat(2,1fr)}.cta-box{align-items:flex-start;flex-direction:column}.trust-grid{grid-template-columns:1fr;gap:12px}.trust-item{justify-content:flex-start}}
+    @media(max-width:540px){.container{width:min(100% - 30px,1160px)}.topbar .container{font-size:11px}.nav{height:66px}.brand{font-size:22px}.hero-grid{min-height:unset;padding:58px 0 50px}h1{letter-spacing:-1.8px}.hero-copy{font-size:15px}.visual{min-height:280px}.sign-card{padding:15px}.tag-one{left:-4px;top:22px}.tag-two{right:-4px;bottom:15px}.floating-tag{font-size:10px;padding:9px 11px}section{padding:68px 0}.service-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr}.about-panel{min-height:260px;padding:27px}.cta{padding-bottom:68px}.cta-box{padding:30px 24px}.form{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-row{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <!-- SETUP: Replace the WhatsApp number and contact details in the CONFIG section near the bottom. -->
+  <div class="topbar"><div class="container"><span>Custom signage manufacturing & installation</span><span>Designed to be seen. Built to last.</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Signifyx home"><span class="brand-mark">S</span>SIGNIFYX</a>
+      <nav class="navlinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#process">Our Process</a><a href="#contact">Contact</a></nav>
+      <a class="btn" href="#contact">Get a quote <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Signage that makes an impression</div>
+          <h1>Make your brand <span>impossible to miss.</span></h1>
+          <p class="hero-copy">From standout 3D LED letters to custom indoor and outdoor signage, Signifyx brings your brand into focus with quality manufacturing and professional installation.</p>
+          <div class="hero-actions"><a class="btn" href="#contact">Request a free quote <span>→</span></a><a class="btn btn-outline" href="#services">Explore our services</a></div>
+          <div class="hero-note">Custom-made solutions • Manufacturing • Installation</div>
+        </div>
+        <div class="visual" aria-label="Decorative illuminated Signifyx sign illustration">
+          <div class="sign-card"><div class="sign-scene"><div class="sign-word">SIGNIFYX</div><div class="sign-sub">MAKE YOUR BRAND VISIBLE</div><div class="glow-line"></div></div></div>
+          <div class="floating-tag tag-one"><span class="tag-dot"></span>Made to measure</div>
+          <div class="floating-tag tag-two">✦ Custom-built signage</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust"><div class="container trust-grid">
+      <div class="trust-item"><span class="trust-icon">✦</span>Custom-made signage solutions</div>
+      <div class="trust-item"><span class="trust-icon">⌁</span>Manufacturing & installation</div>
+      <div class="trust-item"><span class="trust-icon">✓</span>Support from enquiry to installation</div>
+    </div></div>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head"><div class="kicker">What we create</div><h2>Signage solutions for every space.</h2><p>Help your business get noticed with signage tailored to your brand, location and requirements.</p></div>
+        <div class="service-grid">
+          <article class="service"><div class="service-icon">✧</div><h3>3D LED Letter Boards</h3><p>Dimensional illuminated lettering designed to give storefronts and business names a bold presence.</p></article>
+          <article class="service"><div class="service-icon">▣</div><h3>Acrylic Name Boards</h3><p>Clean, contemporary acrylic signage for offices, reception areas, shops and commercial spaces.</p></article>
+          <article class="service"><div class="service-icon">☼</div><h3>Glow Sign Boards</h3><p>Illuminated signboards that help your business remain visible and recognisable after dark.</p></article>
+          <article class="service"><div class="service-icon">▤</div><h3>ACP Sign Boards</h3><p>Modern signboard solutions for shopfronts, building facades and commercial branding.</p></article>
+          <article class="service"><div class="service-icon">▧</div><h3>Flex Banners</h3><p>Printed promotional and display banners for business advertising, events and campaigns.</p></article>
+          <article class="service"><div class="service-icon">〰</div><h3>Neon Sign Boards</h3><p>Eye-catching neon-style signage for retail, hospitality, interiors and feature walls.</p></article>
+          <article class="service"><div class="service-icon">⌂</div><h3>Indoor Office Signage</h3><p>Interior branding, reception signs and information displays for professional workspaces.</p></article>
+          <article class="service"><div class="service-icon">▥</div><h3>Outdoor Building Signage</h3><p>Exterior signage solutions created to make buildings, premises and business locations stand out.</p></article>
+          <article class="service"><div class="service-icon">▣</div><h3>Digital LED Display Boards</h3><p>Digital display solutions for dynamic messages, promotions and high-visibility communication.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-panel"><div class="eyebrow">About Signifyx</div><strong>We turn your brand identity into signage people notice.</strong><small>Custom signage • Thoughtful execution • On-site installation</small></div>
+        <div class="about-copy"><div class="kicker">Your signage partner</div><h2>From your idea to the final installation.</h2><p class="muted">Signifyx manufactures and installs custom signage for businesses and commercial spaces. Whether you need a striking storefront board, professional office branding or a digital LED display, we work with your requirements to create the right signage solution.</p><ul class="check-list"><li><span class="check">✓</span><span>Solutions tailored to your brand and space</span></li><li><span class="check">✓</span><span>Multiple signage types under one roof</span></li><li><span class="check">✓</span><span>Manufacturing and installation support</span></li><li><span class="check">✓</span><span>Enquiry-led quotations for your project</span></li></ul></div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container"><div class="section-head"><div class="kicker">Simple and straightforward</div><h2>How it works.</h2><p>A clear process to help move your signage project forward.</p></div>
+        <div class="process-grid">
+          <div class="step"><div class="step-num">STEP 01</div><h3>Tell us what you need</h3><p>Share your signage type, size, location and project requirements.</p></div>
+          <div class="step"><div class="step-num">STEP 02</div><h3>Discuss the details</h3><p>We connect with you to understand the design, materials and scope.</p></div>
+          <div class="step"><div class="step-num">STEP 03</div><h3>Get your quotation</h3><p>Receive a project quotation based on the details you provide.</p></div>
+          <div class="step"><div class="step-num">STEP 04</div><h3>Manufacture & install</h3><p>Your signage moves through production and on-site installation.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta"><div class="container"><div class="cta-box"><div><h2>Ready to make your brand stand out?</h2><p>Tell us about your signage project. Let's discuss the right solution.</p></div><a class="btn" href="#contact">Start an enquiry <span>→</span></a></div></div></div>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head"><div class="kicker">Let's talk</div><h2>Tell us about your project.</h2><p>Share a few details and Signifyx can get back to you about your signage requirements.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info"><h3>Get in touch</h3><p class="muted">Have a question or need a quotation? Contact us using the details below.</p>
+            <div class="contact-line"><b>Phone / WhatsApp</b><span id="phoneDisplay">Add your business number</span></div>
+            <div class="contact-line"><b>Email</b><span id="emailDisplay">Add your business email</span></div>
+            <div class="contact-line"><b>Service area</b><span id="areaDisplay">Add your city / service area</span></div>
+            <div class="contact-line"><b>Business hours</b><span id="hoursDisplay">Add your business hours</span></div>
+          </div>
+          <div>
+            <form class="form" id="enquiryForm">
+              <div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="Enter your name"></div>
+              <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" required inputmode="tel" placeholder="Enter your phone number"></div>
+              <div class="field"><label for="service">Service required *</label><select id="service" name="service" required><option value="">Select a service</option><option>3D LED letter boards</option><option>Acrylic name boards</option><option>Glow sign boards</option><option>ACP sign boards</option><option>Flex banners</option><option>Neon sign boards</option><option>Indoor office signage</option><option>Outdoor building signage</option><option>Digital LED display boards</option><option>Not sure / Need guidance</option></select></div>
+              <div class="field"><label for="location">Project location</label><input id="location" name="location" placeholder="City / area"></div>
+              <div class="field full"><label for="details">Project details</label><textarea id="details" name="details" placeholder="Tell us about the size, quantity, design or installation requirements..."></textarea></div>
+              <div class="field full"><button class="btn" type="submit">Send enquiry via WhatsApp <span>↗</span></button><div class="form-note">Your enquiry will open in WhatsApp so you can review and send it.</div><div class="form-status" id="formStatus" aria-live="polite"></div></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-row"><div><div class="footer-brand">SIGNIFYX</div><div class="footer-small">Custom signage manufacturing & installation.</div></div><div class="footer-links"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div><div class="footer-small">© <span id="year"></span> Signifyx. All rights reserved.</div></div></footer>
+  <a class="whatsapp" id="whatsappFloat" href="#contact" aria-label="Contact Signifyx on WhatsApp" title="WhatsApp">✆</a>
+
+  <script>
+    // ==================== SIGNIFYX SETUP ====================
+    // Replace these sample values before publishing.
+    // WhatsApp number format: country code + number, digits only. India example: 919876543210
+    const CONFIG = {
+      whatsappNumber: "91XXXXXXXXXX",
+      businessEmail: "your-email@example.com",
+      phoneDisplay: "Add your business number",
+      serviceArea: "Add your city / service area",
+      businessHours: "Add your business hours"
+    };
+    // ========================================================
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("emailDisplay").textContent = CONFIG.businessEmail === "your-email@example.com" ? "Add your business email" : CONFIG.businessEmail;
+    document.getElementById("phoneDisplay").textContent = CONFIG.phoneDisplay;
+    document.getElementById("areaDisplay").textContent = CONFIG.serviceArea;
+    document.getElementById("hoursDisplay").textContent = CONFIG.businessHours;
+
+    const validWhatsApp = /^\d{10,15}$/.test(CONFIG.whatsappNumber);
+    const floatLink = document.getElementById("whatsappFloat");
+    if (validWhatsApp) floatLink.href = "https://wa.me/" + CONFIG.whatsappNumber;
+    else floatLink.href = "#contact";
+
+    document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      if (!validWhatsApp) {
+        document.getElementById("formStatus").textContent = "Website setup needed: add your WhatsApp number in the CONFIG section at the bottom of this file before publishing.";
+        return;
+      }
+      const data = new FormData(this);
+      const message = [
+        "Hello Signifyx, I would like to enquire about signage.",
+        "Name: " + data.get("name"),
+        "Phone: " + data.get("phone"),
+        "Service: " + data.get("service"),
+        "Project location: " + (data.get("location") || "Not provided"),
+        "Project details: " + (data.get("details") || "Not provided")
+      ].join("\n");
+      window.open("https://wa.me/" + CONFIG.whatsappNumber + "?text=" + encodeURIComponent(message), "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
